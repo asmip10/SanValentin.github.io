@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="styles_b.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Imagen de la vaca -->
+        <div class="cow-image">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2I5d3pta3JxbGp5MWUxZGUyc2xlbnYxNmJnM25nZzl6NWVjdDBicyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IybZlSht6DbUkne/giphy.gif" alt="Vaca" class="cow-img">
+        </div>
+
+        <!-- Mensaje de bienvenida -->
+        <h1 class="welcome-text">¡Acepta ser mi vaca!</h1>
+
+        <!-- Botones de aceptación y rechazo -->
+        <div class="button-container">
+            <button class="accept-btn" onclick="accept()">Acepto</button>
+            <button class="reject-btn" onclick="reject()">Rechazo</button>
+        </div>
+
+        <!-- Imagen de la vaca llorando (oculta por defecto) -->
+        <div id="crying-cow" class="crying-cow">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzZ0cDB6cjZ3N2FxdHhuemJuYnh3cmk3eHNza2E2ODV4cXk0NmFzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cWI56OKILQlqg/giphy.gif" alt="Vaca llorando" class="crying-cow-img">
+        </div>
+    </div>
+    
+    <script src="welcome.js"></script>
+</body>
+</html>

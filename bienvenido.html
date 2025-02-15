@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería y Playlist Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="general-container">
+
+        <!-- Título animado de la galería -->
+        <h1 class="animated-title">Feliz Día de San Valentin Vaquita 🐄</h1>
+
+        <!-- Container para la galería -->
+        <div class="gallery-container">
+            <h1 class="main-title">Galería de Momentos Especiales<span>&#160;</span></h1>
+            <div class="gallery">
+                <div class="gallery-item" style="background-image: url('img/1.jpg');" onclick="openModal('img/1.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/2.jpg');" onclick="openModal('img/2.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/3.jpg');" onclick="openModal('img/3.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/4.jpg');" onclick="openModal('img/4.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/5.jpg');" onclick="openModal('img/5.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/6.jpg');" onclick="openModal('img/6.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/7.jpg');" onclick="openModal('img/7.jpg')"></div>
+                <div class="gallery-item" style="background-image: url('img/8.jpg');" onclick="openModal('img/8.jpg')"></div>
+                <!-- Añadir más imágenes aquí -->
+            </div>
+        </div>
+
+        <!-- Modal para mostrar la imagen seleccionada -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <img id="modalImage" class="modal-content" alt="Imagen seleccionada">
+            <div class="modal-overlay"></div>
+        </div>
+
+        <!-- Container para la Playlist de música -->
+        <div class="music-container">
+            <h1 class="main-title">
+                Nuestra Playlist de San Valentín <span class="heart-icon">❤️</span>
+            </h1>
+            <div class="playlist-container">
+                <iframe class="spotify-embed" 
+                        src="https://open.spotify.com/embed/playlist/4LbKYJxZfq31JVfub36yqE?si=485e3888c6e44d0d&nd=1&dlsi=ce3dc96c3d34486d" 
+                        width="100%" 
+                        height="380" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy"
+                        title="Playlist de San Valentín">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Botón flotante para generar corazones -->
+        <button class="floating-btn" aria-label="Generar corazones" onclick="generateVaquita(event)">🐄</button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
